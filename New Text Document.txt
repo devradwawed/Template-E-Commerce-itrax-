@@ -1,0 +1,15 @@
+
+
+
+
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-google-plus-g"></i>
+
+
+
+<i class="fas fa-fish"></i>
+<i class="fas fa-money-check-alt"></i>
+<i class="fas fa-caravan"></i>
+<i class="fas fa-clock"></i>

@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $(".navbar-toggler").click(function () { 
     $(".shoping-card").removeClass("shopingToggle");
+    $(".contact-home").animate({"right" : "-100%"},500);
     $(this).toggleClass("close");
   });
 
@@ -41,4 +42,21 @@ $(document).ready(function() {
   $("#shoppingIcon").click(function() {
     $(".shoping-card").toggleClass("shopingToggle");
   })
+  //contact
+  $("#contactIcon").click(function () {
+    $(".contact-home").animate({"right" : "0"},500);
+    $(" .contact-close").addClass("closeIcon");
+  })
+
+  $(".contact-close").click(function() {
+    $(".contact-home").animate({"right" : "-100%"},500);
+    $(" .contact-close").removeClass("closeIcon");
+  })
+
+
+
+
+
+  // wow js
+  new WOW().init();
 })

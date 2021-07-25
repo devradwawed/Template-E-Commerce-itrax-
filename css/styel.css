@@ -39,7 +39,9 @@ html{
   box-shadow: none !important;
 }
 
-
+a{
+  text-decoration: none !important;
+}
 
 /* 
 => start navbar
@@ -608,3 +610,229 @@ html{
 }
 }
 /*  ends shoping-card */
+
+
+/* contact-home */
+.contact-home {
+  background: #fff;
+  width: 33%;
+  height: 100%;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  padding: 5rem 3rem 0;
+  text-align: center;
+  filter: drop-shadow(2px 4px 6px rgb(204, 204, 204));
+  -webkit-filter: drop-shadow(2px 4px 6px rgb(204, 204, 204));
+  z-index: 99999;
+}
+.contact-home .contact-title{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+.contact-home .carousel{
+  margin-bottom: 42px;
+}
+.contact-home .carousel .carousel-indicators {
+  bottom: -42px;
+}
+.contact-home .carousel .carousel-indicators li{
+  padding: 0;
+  border: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-left: 2rem;
+  background: rgb(204, 201, 201);
+}
+.contact-home .carousel .carousel-indicators li.active{
+  background-color: var(--green);
+}
+.contact-home  .contact-modern {
+  margin: 7rem 0 2rem;
+}
+
+.contact-home  .contact-modern a:nth-child(1){
+  display: block;
+  font-size: 1.5rem;
+  width: 60%;
+  margin: 1.3rem auto;
+  color: #000;
+  line-height: 1.8;
+}
+.contact-home  .contact-modern a:nth-child(2){
+  font-size: 1.5rem;
+  color: #000;
+  position: relative;
+}
+.contact-home  .contact-modern a:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  width: 7rem;
+  height: .2rem;
+  background: #848080b5;
+  top: -8px;
+  left: 36px;
+}
+.contact-home .social-media{
+  margin-top: 4rem;
+}
+.contact-home .social-media a{
+  font-size: 2rem;
+  margin-left: 3rem;
+  color: #000;
+}
+.contact-home .contact-close {
+
+}
+
+.contact-home .contact-close span{
+  width: 3rem;
+  height: .2rem;
+  background: #333;
+  display: block;
+  margin: .2rem;
+  transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  cursor: pointer;
+}
+.contact-home .contact-close.closeIcon span:nth-child(1){
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.contact-home .contact-close.closeIcon span:nth-child(2){
+  transform: rotate(317deg) translate(2px, -2px);
+  -webkit-transform: rotate(317deg) translate(2px, -2px);
+  -moz-transform: rotate(317deg) translate(2px, -2px);
+  -ms-transform: rotate(317deg) translate(2px, -2px);
+  -o-transform: rotate(317deg) translate(2px, -2px);
+}
+@media (max-width:1024px) {
+  .contact-home .contact-modern a:nth-child(1) {
+    width: 100%;
+  }
+}
+@media (max-width:768px) {
+  .contact-home {
+    width: 42%;
+}
+.contact-home .social-media {
+  margin-top: 2rem;
+}
+}
+@media (max-width:500px) {
+  .contact-home {
+    width: 85%;
+  }
+  .contact-home .social-media {
+    margin-top: 2rem;
+}
+.contact-home .contact-modern a:nth-child(1) {
+  width: 100%;
+}
+.contact-home {
+  padding: 5rem 1rem 0;
+}
+}
+
+/* .contact-home */
+.header-home {
+  margin-top: 88px;
+}
+.header-home .carousel-item img{
+  height: 62vh;
+  object-fit: cover;
+}
+.header-home .carousel-item .carousel-caption{
+  position: absolute;
+  top: 11%;
+  left: 10%;
+  text-align: left;
+  bottom: 0;
+}
+.header-home .carousel-item .carousel-caption span{
+  font-size: 3rem;
+  font-family: 'Kalam', cursive;
+}
+.header-home .carousel-item .carousel-caption h5{
+  font-size: 9rem;
+  margin: 2rem 0;
+  text-shadow: 1px 9px 16px rgb(0 0 0 / 18%);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.header-home .carousel-item .carousel-caption p{
+  font-size: 4rem;
+}
+.header-home .carousel-item .carousel-caption .btn{
+  font-size: 1.7rem;
+  background-color: var(--red);
+  padding: 1.5rem 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-home .carousel-control-prev , .header-home .carousel-control-next{
+  background: #ffffff5e;
+  width: 5%;
+  height: 12%;
+  top: 50%;
+}
+.header-home .carousel-control-prev {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.header-home .carousel-control-next{
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.header-home .carousel-control-prev::before{
+  content: "prev";
+  position: absolute;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.header-home .carousel-control-prev::after{
+  content: "";
+  width: 4.3rem;
+  height: .2rem;
+  position: absolute;
+  background: #fff;
+  bottom: 1.7rem;
+  transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+}
+.header-home .carousel-control-prev:hover::after , .header-home .carousel-control-next:hover::after{
+  width: 3rem;
+}
+
+.header-home .carousel-control-next::before{
+  content: "next";
+  position: absolute;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.header-home .carousel-control-next::after{
+  content: "";
+  width: 4.3rem;
+  height: .2rem;
+  position: absolute;
+  background: #fff;
+  bottom: 1.7rem;
+  transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+}
