@@ -46,6 +46,7 @@ $(document).ready(function() {
   $("#contactIcon").click(function () {
     $(".contact-home").animate({"right" : "0"},500);
     $(" .contact-close").addClass("closeIcon");
+    $(".shoping-card").removeClass("shopingToggle")
   })
 
   $(".contact-close").click(function() {
@@ -75,7 +76,47 @@ $(document).ready(function() {
     }
 })
 
+// owlCarousel blog
+  $('#blog .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+  })
 
+  // navber padding
+  $(window).scroll(function() {
+  let wScroll =  $(window).scrollTop();
+    if(wScroll > 200){
+      $("nav").addClass("navScroll");
+      $("#scrollTop").fadeIn(1200);
+      $(".shoping-card").removeClass("shopingToggle");
+    $(".home-search").css({"opacity":"0" ,"visibility":"hidden"});
+    }else{
+      $("nav").removeClass("navScroll");
+      $("#scrollTop").fadeOut(1200);
+    }
+  })
+
+  // scrollTop
+  $("#scrollTop").click(function() {
+    $("html").animate({scrollTop:"0"},1000)
+  })
+
+  // loading
+  $("#loading").fadeOut(2000 , function(){
+    $("body").css({"overflow":"auto"})
+  })
   // wow js
   new WOW().init();
 })
