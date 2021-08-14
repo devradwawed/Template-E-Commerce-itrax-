@@ -53,8 +53,27 @@ $(document).ready(function() {
     $(" .contact-close").removeClass("closeIcon");
   })
 
+  // product-list-show
+  $("#btnToggle").click(function() {
+    $(".product-list").toggleClass("navShow")
+  })
 
-
+  // client-logo
+  $('#client .owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 
 
   // wow js
